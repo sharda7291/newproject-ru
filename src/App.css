@@ -1,0 +1,91 @@
+
+/* Headings */
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.font-teko {
+  font-family: 'Teko', sans-serif;
+  font-weight: 600;
+}
+
+/* Body Text */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.font-titillium {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
+
+/* Buttons */
+.font-russo {
+  font-family: 'Russo One', sans-serif;
+}
+
+.font-exo2 {
+  font-family: 'Exo 2', sans-serif;
+}
+h1{
+font-family: 'Russo One', sans-serif;
+color: #B22222;
+}
+
+h2, h3, h4, h5, h6{
+  font-family: 'Teko', sans-serif;
+  font-weight: 600;
+  
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.custom-navbar {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  height: 100px;
+  margin-top: -0px; /* adjust to pull it upward if needed */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.custom-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-hover:hover {
+  color: #b22222 !important;
+  font-size: 1.1rem;
+}
+
+.email-link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.email-link:hover {
+  color: #b22222 !important;
+  font-size: 1.05rem;
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.nav-item {
+font-size: 16px;
+}
