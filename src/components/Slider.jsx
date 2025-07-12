@@ -4,9 +4,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import '../App.css'
+import { useTranslation } from 'react-i18next';
 
 
 function Slider() {
+  const { t } = useTranslation();
   return (
     <div style={{ height: '650px'}}>
       <Swiper
@@ -37,10 +39,12 @@ function Slider() {
                 textShadow: '0 2px 4px rgba(0,0,0,0.6)',
               }}
             >
-              <h2 className='font-russo ' style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Premium Industrial Tools Exported from India
+              <h2 className='font-russo ' style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{t('slider1_title')}
 </h2>
-              <p className='font-exo2' style={{ fontSize: '1.2rem' }}>Count on us for high-performance pipe, plumbing, and safety tools—engineered in India, trusted across Russia.
+              <p className='font-exo2' style={{ fontSize: '1.2rem' }}> {t('slider1_desc')}
 </p>
+<button class="button-86" role="button" style={{color:''}}>{t('explore')}</button>
+ 
             </div>
           </div>
         </SwiperSlide>
@@ -62,9 +66,10 @@ function Slider() {
                 textShadow: '0 2px 4px rgba(0,0,0,0.6)',
               }}
             >
-              <h2 className='font-russo '  style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Built for Oil & Gas Demands</h2>
-              <p className='font-exo2' style={{ fontSize: '1.2rem' }}>Our specialized oil and gas tools deliver rugged durability and precision for Russia’s toughest conditions.
+              <h2 className='font-russo '  style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}> {t('slider2_title')}</h2>
+              <p className='font-exo2' style={{ fontSize: '1.2rem' }}>{t('slider2_desc')}
 </p>
+              <button class="button-86" role="button" style={{color:''}}> {t('explore')}</button>
             </div>
           </div>
         </SwiperSlide>

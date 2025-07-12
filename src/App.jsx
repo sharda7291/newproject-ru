@@ -19,6 +19,9 @@ import HotelierPage from './HotelierPage';
 import SafetyToolsPage from './SafetyToolsPage';
 import ToolsTrolleyPage from './ToolsTrolleyPage';
 import PrecisionToolsPage from './PrecisionToolsPage';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
 
 function App() {
   return (

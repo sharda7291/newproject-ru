@@ -1,34 +1,37 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const features = [
-  {
-    img: '/durability.png',
-    title: 'Industrial-Grade Durability',
-    desc: 'Durable for harsh industrial environments.',
-  },
-  {
-    img: '/worldwide.png',
-    title: 'Worldwide Shipping',
-    desc: 'Fast, reliable tool delivery anywhere.',
-  },
-  {
-    img: '/precision.png',
-    title: 'Precision-Engineered Tools',
-    desc: 'Engineered for precision, speed, reliability.',
-  },
-  {
-    img: '/24-7.png',
-    title: '24/7 Customer Support',
-    desc: 'Experts ready to assist anytime.',
-  },
-];
-
 const ChooseBlack = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      img: '/durability.png',
+      title: t('durability_title'),
+      desc: t('durability_desc'),
+    },
+    {
+      img: '/worldwide.png',
+      title: t('shipping_title'),
+      desc: t('shipping_desc'),
+    },
+    {
+      img: '/precision.png',
+      title: t('precision_title'),
+      desc: t('precision_desc'),
+    },
+    {
+      img: '/24-7.png',
+      title: t('support_title'),
+      desc: t('support_desc'),
+    },
+  ];
+
   return (
-    <div className="container-fluid">
+    <div className="container">
       <h2 className="mb-5" style={{ color: '#b22222' }}>
-        Why Industry Leaders Choose Us!
+        {t('choose_heading')}
       </h2>
 
       <div className="row justify-content-center">
@@ -42,7 +45,6 @@ const ChooseBlack = () => {
                 boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
                 backgroundColor: '#fff',
                 textAlign: 'center',
-                height: '100%',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
@@ -58,7 +60,6 @@ const ChooseBlack = () => {
                   borderRadius: '50%',
                   border: '1px solid #f9a825',
                   padding: '10px',
-                  backgroundColor: '',
                 }}
               />
               <h5 style={{ color: '#b22222' }}>{feature.title}</h5>
